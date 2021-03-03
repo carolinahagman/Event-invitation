@@ -1,3 +1,4 @@
+<img src="https://media2.giphy.com/media/3ohjUScIRWI3NeDnCE/giphy.gif?cid=ecf05e47m1durhrs0gaubk87xloz69enwscqv3ny1410g4ly&rid=giphy.gif" width="100%">
 # Event-invitation
 
 ## Built With
