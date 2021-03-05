@@ -1,0 +1,86 @@
+:root {
+  --bg-color: #e9ecef;
+  --bg-color-dark: #212529;
+  --button-color-orange: #ff5700;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+button {
+  border: none;
+  box-shadow: unset;
+}
+
+header {
+  display: flex;
+  width: 100vw;
+  height: 110px;
+  background-color: var(--bg-color-dark);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  z-index: 2;
+}
+
+.logo-container img {
+  height: 90px;
+  width: 90px;
+}
+ul {
+  width: 80%;
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.top-links button {
+  color: white;
+  background: unset;
+  margin-left: 10px;
+}
+
+header .buy-ticket {
+  align-items: flex-end;
+}
+
+.buy-ticket {
+  color: white;
+  background: var(--button-color-orange);
+  border-radius: 25px;
+  width: 8vw;
+  max-width: 220px;
+  min-width: 100px;
+  padding: 5px 0 5px 0;
+}
+
+.primary-button {
+  background: white;
+  border-radius: 25px;
+  width: 8vw;
+  max-width: 220px;
+  min-width: 100px;
+  padding: 5px 0 5px 0;
+}
+
+.hero {
+  width: 100vw;
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-container span {
+  display: flex;
+}
