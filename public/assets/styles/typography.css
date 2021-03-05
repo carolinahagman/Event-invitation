@@ -1,0 +1,14 @@
+.subheading {
+  color: var(--color-orange);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.heading {
+  /* color: white; */
+  text-align: center;
+}
+
+.text-container {
+  color: white;
+}

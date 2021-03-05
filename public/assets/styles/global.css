@@ -1,7 +1,7 @@
 :root {
   --bg-color: #e9ecef;
   --bg-color-dark: #212529;
-  --button-color-orange: #ff5700;
+  --color-orange: #ff5700;
 }
 
 body {
@@ -48,7 +48,7 @@ header .buy-ticket {
 
 .buy-ticket {
   color: white;
-  background: var(--button-color-orange);
+  background: var(--color-orange);
   border-radius: 25px;
   width: 8vw;
   max-width: 220px;
@@ -81,6 +81,7 @@ header .buy-ticket {
   transform: translate(-50%, -50%);
 }
 
-.text-container span {
+.text-container div {
   display: flex;
+  justify-content: center;
 }
