@@ -12,3 +12,19 @@
 .text-container {
   color: white;
 }
+
+.details-container p {
+  padding-left: 2rem;
+}
+
+.read-more {
+  color: white;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+}
+
+aside p {
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  color: var(--color-orange);
+}

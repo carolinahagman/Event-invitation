@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: var(--bg-color-dark);
 }
 
 button {
@@ -23,6 +23,10 @@ header {
   padding: 1rem;
   position: fixed;
   z-index: 2;
+}
+
+section {
+  width: 100vw;
 }
 
 .logo-container img {
@@ -72,6 +76,7 @@ header .buy-ticket {
 
 .hero img {
   width: 100%;
+  opacity: 58%;
 }
 
 .text-container {
@@ -80,8 +85,26 @@ header .buy-ticket {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+.buttons button {
+  margin-left: 2rem;
+}
 .text-container div {
   display: flex;
   justify-content: center;
+}
+
+aside .read-more {
+  position: absolute;
+  bottom: 25%;
+  left: 50px;
+}
+
+.meet-future {
+  display: flex;
+  justify-content: center;
+}
+
+.meet-future .container {
+  width: 50%;
+  color: white;
 }
