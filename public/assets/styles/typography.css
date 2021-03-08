@@ -1,12 +1,41 @@
+@font-face {
+  font-family: Karla-Bold;
+  src: url(../fonts/Karla-Bold.woff2);
+}
+@font-face {
+  font-family: Karla;
+  src: url(../fonts/Karla-Regular.woff2);
+}
+@font-face {
+  font-family: Karla-Light;
+  src: url(../fonts/Karla-Light.woff2);
+}
+
+h6 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  font-weight: 300;
+  margin: 0px;
+}
+
 .subheading {
   color: var(--color-orange);
   text-transform: uppercase;
   text-align: center;
+  font-family: Karla-Light;
+  font-size: 1rem;
+  margin: 0px;
+  letter-spacing: 4px;
 }
 
 .heading {
   /* color: white; */
   text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 2.5rem;
+  font-weight: 300;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .text-container {
@@ -21,10 +50,47 @@
   color: white;
   text-transform: uppercase;
   transform: rotate(-90deg);
+  font-size: 14px;
 }
 
 aside p {
   text-transform: uppercase;
   transform: rotate(-90deg);
   color: var(--color-orange);
+}
+
+.karla {
+  font-family: Karla-Light;
+}
+.karla-bold {
+  font-family: Karla;
+}
+
+.white-text {
+  margin: 0px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.text-div p {
+  font-size: 14px;
+}
+
+.text-div button {
+  font-size: 15px;
+}
+
+.left {
+  width: 100%;
+  text-align: left;
+}
+.bottom-text {
+  padding-bottom: 2rem;
+}
+
+.contest-heading {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 30px;
 }

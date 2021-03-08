@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="./assets/styles/global.css" />
     <link rel="stylesheet" href="./assets/styles/typography.css" />
     <link rel="stylesheet" href="./assets/styles/media.css" />
+    <link rel="stylesheet" href="./assets/styles/carousel.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <link
       rel="stylesheet"
       href="../node_modules/modern-normalize/modern-normalize.css"
@@ -29,58 +34,61 @@
         <li class="top-links"><button id="contact">Kontakt</button></li>
         <li class="top-links"><button id="search">Sök</button></li>
       </ul>
-      <button class="buy-ticket">Köp biljett</button>
+      <button class="buy-ticket karla">Köp biljett</button>
     </header>
     <section class="hero">
       <img
-        src="./assets/images/Bildbank/faramarz_gosheh-fika-5292.jpg"
+        src="./assets/images/Bildbank/faramarz_gosheh-fika-5292.png"
         alt=""
-        class="hero-img"
+        class="darkened"
       />
       <div class="text-container">
         <h3 class="subheading">Streetfoto vernissage</h3>
         <h1 class="heading">Ta chansen, kliv in i rampljuset</h1>
-        <p class="white-text">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
+        <p class="white-text karla">
+          Nu ger vi fotografer och besökare chansen att få upptäcka konsten ute
+          på våra gator. På Streetfoto låter vi gatufotografin en plats i
+          rampljuset.
         </p>
         <div class="details-container">
-          <p>21 juni, kl. 10:00</p>
-          <p>Fotografiska</p>
+          <p class="location-info karla">18 juni, kl. 10:00</p>
+          <p class="location-info karla">Fotografiska</p>
         </div>
         <div class="buttons">
-          <button class="primary-button">För fotografer</button
-          ><button class="buy-ticket">Köp biljett</button>
+          <button class="primary-button karla">För fotografer</button
+          ><button class="buy-ticket karla">Köp biljett</button>
         </div>
       </div>
-      <aside><p class="read-more"><- läs mer</p></aside>
+      <button class="read-more karla-bold"><- läs mer</button>
     </section>
 
     <section class="meet-future">
       <aside><p>Information</p></aside>
       <div class="container">
         <h1 class="heading">Möt framtidens fotografer</h1>
-        <p>
+        <p class="karla">
           Visst är det fantastiskt med fotografier i rörelse? Fotografiska i
           Stockholm ger hobbyfotografer chansen att kliva in i rampljuset.
           Samtidigt som våra besökare får chansen att se talanger hänga upp sina
           främsta verk i en streetfoto vernissage. Vi vill se verkligheter på
           våra gator få måla upp våra väggar i våra lokaler.
         </p>
-        <div>
+        <div class="info-container">
           <div class="text-div">
-            <h4>#streetfototävling</h4>
-            <p>
+            <h6>#streetfototävling</h6>
+            <p class="karla">
               Vill du hänga upp dina verk på Fotografiska? Tävla om en plats på
               podiet. Ladda upp tre bilder med hashtagen #streetfototävling &
               tagga oss. Då är du med och tävlar.
             </p>
-            <p>Till tävlingen -></p>
+            <button class="karla">Till tävlingen -></button>
           </div>
-          <img src="" alt="" />
+          <img
+            src="./assets/images/Bildbank/erik_hassel-fotografiska_museum-7797.jpg"
+            alt=""
+          />
         </div>
-        <p>
+        <p class="karla">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
@@ -89,9 +97,116 @@
           sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
           dolore magna aliquyam erat, sed diam voluptua.
         </p>
-        <p> Har du några frågor? Tveka inte på att kontakta oss.</p>
+        <p class="karla left bottom-text">
+          Har du några frågor? Tveka inte på att kontakta oss.
+        </p>
+      </div>
+    </section>
+    <section class="film">
+      <video
+        class="darkened"
+        src="./assets/images/Bildbank/erik_hassel-fotografiska_museum-7797.mp4"
+      ></video>
+      <button class="play-button">
+        <img src="./assets/images/play-button.svg" alt="Play button" />
+      </button>
+    </section>
+    <section class="contest">
+      <aside><p>Tävlingen</p></aside>
+      <div class="container">
+        <div class="contest-text">
+          <h1 class="heading">Vill du vara med & tävla?</h1>
+          <p class="karla">
+            Ta chansen att få ställa ut dina fantastiska verk på Fotografiska i
+            Stockholm i sommar. Hos oss är inget varken för galet eller för
+            minimalistiskt. Vi älskar när svenska fotografer vågar att ta plats
+            och utrycka sig med sina kameror. Gör det enkelt för dig, tävla nu,
+            du kommer inte att ångra dig.
+          </p>
+          <div class="img-container">
+            <div class="upper-images">
+              <img
+                src="./assets/images/Bildbank/magnus_liam_karlson-stockholm_pride-5457.jpg"
+                alt=""
+                class="negative-skew-image"
+              /><img
+                src="./assets/images/Bildbank/simon_paulin-night_club_table_tennis-4966.jpg"
+                alt=""
+                class="skew-image"
+              />
+            </div>
+            <img
+              src="./assets/images/Bildbank/simon_paulin-night_club_table_tennis-4966.jpg"
+              alt=""
+            />
+          </div>
+          <h4 class="contest-heading">Hur tävlar jag?</h4>
+          <p class="karla">
+            Vad roligt att du vill vara med och tävla! Oroa dig inte, det är
+            enkelt att vara med och tävla. Plocka fram dina finaste, häftigaste
+            eller sorgligaste streetfoton och publicera dom på Instagram. För
+            att vi ska få uppleva dom behöver du ha med hashtagen
+            #streetfototävling och tagga vårt konto @fotografiska. Sista
+            publiceringsdatum är 1 april 2021. Lycka till!
+          </p>
+        </div>
+
+        <div class="inspiration">
+          <h4 class="contest-heading">Få inspiration från andra</h4>
+
+          <div class="carousel" data-flickity='{ "fullscreen": true, "lazyLoad": 20 }'>
+            <div class="carousel-cell">
+              <img class="carousel-cell-image"
+                data-flickity-lazyload="https://picsum.photos/720/540/?image=517" />
+            </div>
+            <div class="carousel-cell">
+              <img class="carousel-cell-image"
+                data-flickity-lazyload="https://picsum.photos/540/720/?image=696" />
+            </div>
+            <div class="carousel-cell">
+              <img class="carousel-cell-image"
+                data-flickity-lazyload="https://picsum.photos/720/540/?image=56" />
+            </div>
+            <div class="carousel-cell">
+              <img class="carousel-cell-image"
+                data-flickity-lazyload="https://picsum.photos/800/500/?image=1084" />
+            </div>
+            <div class="carousel-cell">
+              <img class="carousel-cell-image"
+                data-flickity-lazyload="https://picsum.photos/720/540/?image=1080" />
+            </div>
+            <div class="carousel-cell">
+              <img class="carousel-cell-image"
+                data-flickity-lazyload="https://picsum.photos/640/640/?image=1074" />
+            </div>
+            <div class="carousel-cell">
+              <img class="carousel-cell-image"
+                data-flickity-lazyload="https://picsum.photos/720/540/?image=1069" />
+            </div>
+            <div class="carousel-cell">
+              <img class="carousel-cell-image"
+                data-flickity-lazyload="https://picsum.photos/800/500/?image=1062" />
+            </div>
+            <div class="carousel-cell">
+              <img class="carousel-cell-image"
+                data-flickity-lazyload="https://picsum.photos/720/540/?image=1002" />
+            </div>
+            <div class="carousel-cell">
+              <img class="carousel-cell-image"
+                data-flickity-lazyload="https://picsum.photos/640/640/?image=935" />
+            </div>
+            <div class="carousel-cell">
+              <img class="carousel-cell-image"
+                data-flickity-lazyload="https://picsum.photos/720/540/?image=855" />
+            </div>
+            <div class="carousel-cell">
+              <img class="carousel-cell-image"
+                data-flickity-lazyload="https://picsum.photos/640/640/?image=824" />
+            </div>
+          </div>
       </div>
     </section>
     <script src="./assets/scripts/app.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </body>
 </html>
