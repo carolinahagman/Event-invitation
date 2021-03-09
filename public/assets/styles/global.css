@@ -160,6 +160,7 @@ header .buy-ticket {
   background-color: var(--bg-color);
   display: flex;
   justify-content: center;
+  padding-bottom: 5rem;
 }
 
 .contest .container {

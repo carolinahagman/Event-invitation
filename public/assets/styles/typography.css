@@ -18,6 +18,10 @@ h6 {
   margin: 0px;
 }
 
+ul {
+  font-family: "Times New Roman", Times, serif;
+}
+
 .subheading {
   color: var(--color-orange);
   text-transform: uppercase;
@@ -93,4 +97,8 @@ aside p {
   font-size: 24px;
   font-weight: 300;
   margin-bottom: 30px;
+}
+
+.rules a {
+  color: var(--bg-color-dark);
 }
