@@ -248,3 +248,12 @@ header .buy-ticket {
 .inspiration .carousel {
   width: 50%;
 }
+
+.links {
+  width: 100vw;
+  display: flex;
+}
+
+.links img {
+  width: 50%;
+}
