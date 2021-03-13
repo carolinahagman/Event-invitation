@@ -12,14 +12,15 @@
 }
 
 h6 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "minion-pro", Times, serif;
   font-size: 22px;
   font-weight: 300;
   margin: 0px;
 }
 
 ul {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "minion-pro", Times, serif;
+  font-size: 18px;
 }
 
 .subheading {
@@ -37,17 +38,13 @@ ul {
   text-align: center;
   margin-top: 5px;
   margin-bottom: 5px;
-  font-size: 2.5rem;
-  font-weight: 300;
-  font-family: "Times New Roman", Times, serif;
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "minion-pro", Times, serif;
 }
 
 .text-container {
   color: white;
-}
-
-.details-container p {
-  padding-left: 2rem;
 }
 
 .read-more {
@@ -93,7 +90,7 @@ aside p {
 }
 
 .contest-heading {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "minion-pro", Times, serif;
   font-size: 24px;
   font-weight: 300;
   margin-bottom: 30px;

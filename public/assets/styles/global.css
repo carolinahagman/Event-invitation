@@ -42,7 +42,7 @@ section {
   width: 100vw;
 }
 
-.logo-container img {
+.logo-container svg {
   height: 90px;
   width: 90px;
 }
@@ -93,19 +93,29 @@ header .buy-ticket {
   width: 100%;
 }
 
-.hero-img {
-}
-
 .text-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.buttons button {
-  margin-left: 2rem;
+.details-container {
+  display: flex;
+  justify-content: space-evenly;
 }
-.text-container div {
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 83vw;
+  max-width: 500px;
+}
+.buttons button {
+  /* margin-left: 2rem; */
+  display: flex;
+  justify-content: center;
+  max-width: 45%;
+}
+.buttons .text-container div {
   display: flex;
   justify-content: center;
 }
@@ -123,7 +133,8 @@ header .buy-ticket {
 }
 
 .meet-future .container {
-  width: 50%;
+  width: 84%;
+  max-width: 500px;
   color: white;
   display: flex;
   flex-direction: column;
@@ -164,7 +175,8 @@ header .buy-ticket {
 }
 
 .contest .container {
-  width: 50%;
+  width: 84vw;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -187,7 +199,7 @@ header .buy-ticket {
   transform: translate(-50%, -50%);
 }
 
-.play-button img {
+.play-button svg {
   width: 150px;
   height: 150px;
 }
@@ -197,8 +209,6 @@ header .buy-ticket {
   padding-top: 45px;
 }
 
-.contest .container {
-}
 .contest-text {
   width: 100%;
   max-width: 700px;

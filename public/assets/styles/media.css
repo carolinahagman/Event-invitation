@@ -1,1 +1,61 @@
-    
+@media only screen and (orientation: portrait) {
+  .topbar {
+    display: none;
+  }
+  header .buy-ticket {
+    display: none;
+  }
+  .carousel {
+    display: none;
+  }
+  .portrait-hero-image {
+    height: 130vw;
+    object-fit: cover;
+    width: 100vw;
+  }
+  .read-more {
+    display: none;
+  }
+  section aside {
+    display: none;
+  }
+  section.meet-future {
+    padding-top: 1.5rem;
+  }
+  .info-container {
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  div .info-container .text-div {
+    width: 100%;
+    text-align: center;
+    padding: 3rem 1rem 2.5rem 1rem;
+  }
+
+  div .info-container img {
+    width: 100%;
+  }
+  .film .play-button svg {
+    width: 20%;
+  }
+  .img-container .upper-images img {
+    width: 50%;
+  }
+  div .img-container {
+    width: 100vw;
+    transform: unset;
+    display: flex;
+    align-items: flex-start;
+  }
+  .img-container .upper-images {
+    width: 100%;
+    display: block;
+  }
+  img.skew-image {
+    float: right;
+  }
+  div .img-container .upper-images img {
+    width: 70%;
+  }
+}
