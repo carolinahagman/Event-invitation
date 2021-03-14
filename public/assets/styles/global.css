@@ -3,6 +3,9 @@
   --bg-color-dark: #212529;
   --color-orange: #ff5700;
 }
+.hidden {
+  display: none;
+}
 
 body {
   background-color: var(--bg-color-dark);
@@ -19,6 +22,9 @@ aside {
   display: flex;
   align-items: center;
   padding-right: 40px;
+  position: absolute;
+  left: calc(50% - 600px);
+  top: calc(50% - 26px);
 }
 
 button:focus,
@@ -33,9 +39,9 @@ header {
   background-color: var(--bg-color-dark);
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0px 1rem;
   position: fixed;
-  z-index: 2;
+  z-index: 100;
 }
 
 section {
@@ -47,16 +53,42 @@ section {
   width: 90px;
 }
 ul {
-  width: 80%;
+  height: 100%;
+  width: 100%;
+  margin-right: 10px;
   display: flex;
   list-style: none;
   justify-content: flex-end;
+}
+
+header ul li button {
+  height: 100%;
+}
+
+header ul li button:hover {
+  background: #ffffff05;
+}
+
+.top-links {
+  display: flex;
+  align-items: center;
 }
 
 .top-links button {
   color: white;
   background: unset;
   margin-left: 10px;
+}
+
+#search {
+  cursor: auto;
+}
+
+#search:hover {
+  background: none;
+}
+#search svg {
+  width: 30px;
 }
 
 header .buy-ticket {
@@ -71,6 +103,12 @@ header .buy-ticket {
   max-width: 220px;
   min-width: 130px;
   padding: 5px 0 5px 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.buy-ticket:hover {
+  color: #212529;
+  background-color: white;
 }
 
 .primary-button {
@@ -81,6 +119,17 @@ header .buy-ticket {
   min-width: 130px;
   white-space: nowrap;
   padding: 5px 0 5px 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.primary-button:hover {
+  background-color: #ff5700;
+  color: white;
+}
+
+.container p {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .hero {
@@ -97,7 +146,11 @@ header .buy-ticket {
   position: absolute;
   top: 50%;
   left: 50%;
+  max-width: 600px;
   transform: translate(-50%, -50%);
+}
+.text-container .white-text {
+  margin-top: 10px;
 }
 .details-container {
   display: flex;
@@ -105,9 +158,8 @@ header .buy-ticket {
 }
 .buttons {
   display: flex;
-  justify-content: space-between;
-  width: 83vw;
-  max-width: 500px;
+  justify-content: space-evenly;
+  width: 100%;
 }
 .buttons button {
   /* margin-left: 2rem; */
@@ -130,11 +182,12 @@ header .buy-ticket {
   display: flex;
   justify-content: center;
   padding-top: 3rem;
+  position: relative;
 }
 
 .meet-future .container {
   width: 84%;
-  max-width: 500px;
+  max-width: 650px;
   color: white;
   display: flex;
   flex-direction: column;
@@ -172,11 +225,12 @@ header .buy-ticket {
   display: flex;
   justify-content: center;
   padding-bottom: 5rem;
+  position: relative;
 }
 
 .contest .container {
   width: 84vw;
-  max-width: 500px;
+  max-width: 650px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -211,7 +265,7 @@ header .buy-ticket {
 
 .contest-text {
   width: 100%;
-  max-width: 700px;
+  max-width: 650px;
 }
 
 .contest-text h1 {
@@ -265,5 +319,100 @@ header .buy-ticket {
 }
 
 .links img {
-  width: 50%;
+  width: 100%;
+  height: 32vw;
+  object-fit: cover;
+}
+
+.links div {
+  position: relative;
+}
+
+.links div p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 4rem;
+  line-height: 5.1rem;
+  margin: 0px;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.carousel-2 {
+  width: 100vw;
+  height: 100vh;
+}
+
+.carousel-2 div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel-2 .flickity-button {
+  color: white;
+
+  width: 200px;
+  height: 200px;
+}
+
+.map-section {
+  background: var(--bg-color);
+}
+
+.map {
+  width: 100vw;
+  object-fit: contain;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: var(--bg-color);
+  height: 22vw;
+}
+
+footer h6 {
+  margin-top: 55px;
+  font-size: 2rem;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0px;
+}
+
+footer ul li {
+  margin: 7px 0px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: var(--bg-color-dark);
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+.social-media svg {
+  width: 23px;
+  margin: 0px 7px;
+}
+
+.snowflake-container {
+  position: absolute;
+  left: -10vw;
+  top: 35px;
+  width: 25vw;
+  height: 20vw;
+  overflow: hidden;
 }

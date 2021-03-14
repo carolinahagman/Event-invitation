@@ -52,10 +52,15 @@
     width: 100%;
     display: block;
   }
+
   img.skew-image {
     float: right;
   }
   div .img-container .upper-images img {
     width: 70%;
   }
+}
+
+.hamburger {
+  display: none;
 }

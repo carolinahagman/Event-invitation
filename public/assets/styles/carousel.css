@@ -14,6 +14,16 @@ body {
   width: 380px;
   margin-bottom: 40px;
 }
+button.flickity-button {
+  background: none;
+  transition: all 0.2s ease-in-out;
+  width: 80px;
+  height: 80px;
+}
+
+button.flickity-button:hover {
+  background: none;
+}
 
 .inspiration .flickity-prev-next-button.next {
   right: -150px;

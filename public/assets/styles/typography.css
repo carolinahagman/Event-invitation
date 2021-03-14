@@ -18,6 +18,10 @@ h6 {
   margin: 0px;
 }
 
+.minion {
+  font-family: "minion-pro", Times, serif;
+}
+
 ul {
   font-family: "minion-pro", Times, serif;
   font-size: 18px;
@@ -37,7 +41,7 @@ ul {
   /* color: white; */
   text-align: center;
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   font-size: 3rem;
   font-weight: 400;
   font-family: "minion-pro", Times, serif;
@@ -53,10 +57,14 @@ ul {
   transform: rotate(-90deg);
   font-size: 14px;
 }
+p {
+  line-height: 1.3rem;
+}
 
 aside p {
   text-transform: uppercase;
   transform: rotate(-90deg);
+  letter-spacing: 4px;
   color: var(--color-orange);
 }
 
@@ -74,7 +82,8 @@ aside p {
 }
 
 .text-div p {
-  font-size: 14px;
+  font-size: 15px;
+  margin-top: 10px;
 }
 
 .text-div button {
@@ -91,9 +100,15 @@ aside p {
 
 .contest-heading {
   font-family: "minion-pro", Times, serif;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 300;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
+  text-align: start;
+  width: 100%;
+}
+.contest-heading.centered {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .rules a {
@@ -111,6 +126,6 @@ aside p {
 
 .meet-winners h2 {
   margin-top: 5rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: center;
 }
