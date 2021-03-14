@@ -5,6 +5,8 @@
   header .buy-ticket {
     display: none;
   }
+  .hero h1.heading {
+  }
   .carousel {
     display: none;
   }
@@ -13,7 +15,7 @@
     object-fit: cover;
     width: 100vw;
   }
-  .read-more {
+  button.read-more {
     display: none;
   }
   section aside {
@@ -41,6 +43,11 @@
   }
   .img-container .upper-images img {
     width: 50%;
+    margin-top: 40px;
+  }
+
+  .img-container div.upper-images {
+    margin-top: 0px;
   }
   div .img-container {
     width: 100vw;
@@ -59,8 +66,44 @@
   div .img-container .upper-images img {
     width: 70%;
   }
+
+  .img-container > img.aos-init {
+    width: 70%;
+  }
+
+  h4.contest-heading {
+    margin-top: 0px;
+    text-align: center;
+  }
+  .links {
+    flex-direction: column;
+  }
+  .links div img {
+    height: 64vw;
+    width: 100%;
+  }
+  div.carousel-2 {
+    height: 33vh;
+  }
+
+  div.carousel-2 .flickity-button {
+    width: 4rem;
+  }
+
+  div.mobile-only-image {
+    display: block;
+  }
 }
 
 .hamburger {
   display: none;
+}
+
+@media only screen and (max-width: 1500) {
+}
+@media only screen and (max-width: 1000) {
+}
+@media only screen and (max-width: 750) {
+}
+@media only screen and (max-width: 350) {
 }
