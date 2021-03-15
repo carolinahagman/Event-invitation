@@ -1,4 +1,4 @@
-let playBtn = document.querySelector(".play-button");
+let playBtn = document.querySelector(".play");
 let video = document.querySelector("#video");
 
 playBtn.addEventListener("click", (e) => {
@@ -7,3 +7,7 @@ playBtn.addEventListener("click", (e) => {
   video.classList.toggle("darkened");
   video.play();
 });
+
+const urlParams = new URLSearchParams(window.location.search);
+const firstName = urlParams.get("firstname");
+const lastName = urlParams.get("lastname");

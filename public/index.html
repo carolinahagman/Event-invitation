@@ -416,7 +416,7 @@
         class="darkened"
         src="./assets/images/Bildbank/erik_hassel-fotografiska_museum-7797.mp4"
       ></video>
-      <button class="play-button">
+      <button class="play">
         <svg
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
@@ -632,7 +632,36 @@
         </div>
       </div>
     </section>
-
+    <section class="form">
+      <aside><p>Biljetter</p></aside>
+      <h1 class="heading">Biljetter</h1>
+      <p class="karla">
+        Vad roligt att du vill hänga på vårt vernissage! Fyll i formuläret för
+        att få delta i vårt evenemang. Inbjudan är personlig och gäller för en
+        person.
+      </p>
+      <form class="karla" action="#">
+        <div>
+          <input type="text" name="name" id="name" required />
+          <label for="name">Namn</label>
+        </div>
+        <div>
+          <input type="email" name="email" id="email" required />
+          <label for="email">Email</label>
+        </div>
+        <div>
+          <input type="adress" name="adress" id="adress" required />
+          <label for="adress">Adress</label>
+        </div>
+        <div class="radio">
+          <input type="radio" name="accept" id="accept" required />
+          <label for="accept">Yes, jag kommer!</label>
+        </div>
+        <div class="submit-container">
+          <button class="primary-button" type="submit">Till kassan</button>
+        </div>
+      </form>
+    </section>
     <section class="map-section">
       <img
         class="map"
@@ -905,7 +934,7 @@
       </div>
       <p class="karla rights">© 2021 School Project. No Rights Reserved.</p>
     </footer>
-    <script type="module" src="./assets/scripts/app.js"></script>
+    <script src="./assets/scripts/app.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
