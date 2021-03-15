@@ -219,7 +219,7 @@
         class="darkened portrait-hero-image"
       />
       <div class="text-container">
-        <h3 class="subheading">Streetfoto vernissage</h3>
+        <h3 id="personal-title" class="subheading">Streetfoto vernissage</h3>
         <h1 class="heading">Ta chansen, kliv in i rampljuset</h1>
         <p class="white-text karla">
           Nu ger vi fotografer och besökare chansen att få upptäcka konsten ute
@@ -540,6 +540,7 @@
         <div class="open-img">
           <p class="minion">Öppettider<br />& priser</p>
           <img
+            id="open-hours-img"
             class="darkened"
             src="./assets/images/Bildbank/house_spring2020_christofferenglund-3-1800x1200.jpg"
             alt=""
@@ -550,6 +551,7 @@
         <div class="contact-img">
           <p class="minion">Kontakt</p>
           <img
+            id="contact-img"
             class="darkened"
             src="./assets/images/Bildbank/erik_hassel-fotografiska_museum-7797.jpg"
             alt=""
@@ -654,8 +656,8 @@
           <label for="email">Email</label>
         </div>
         <div>
-          <input type="adress" name="adress" id="adress" required />
-          <label for="adress">Adress</label>
+          <input type="text" name="address" id="address" required />
+          <label for="address">Adress</label>
         </div>
         <div class="radio">
           <input type="radio" name="accept" id="accept" required />

@@ -545,3 +545,8 @@ footer ul li a {
   position: absolute;
   top: -110px;
 }
+
+#contact-img,
+#open-hours-img {
+  transition: all 0.1s ease-in-out;
+}
