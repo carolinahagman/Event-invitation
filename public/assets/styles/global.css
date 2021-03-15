@@ -7,8 +7,16 @@
   display: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--bg-color-dark);
+}
+
+a {
+  text-decoration: none;
 }
 
 button {
@@ -46,6 +54,7 @@ header {
 
 section {
   width: 100vw;
+  position: relative;
 }
 
 .logo-container svg {
@@ -59,13 +68,20 @@ ul {
   display: flex;
   list-style: none;
   justify-content: flex-end;
+  align-items: center;
 }
-
-header ul li button {
+header ul li {
   height: 100%;
 }
+header ul li a {
+  height: 100%;
+  padding: 3px 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
 
-header ul li button:hover {
+header ul li a:hover {
   background: #ffffff05;
 }
 
@@ -74,7 +90,7 @@ header ul li button:hover {
   align-items: center;
 }
 
-.top-links button {
+.top-links a {
   color: white;
   background: unset;
   margin-left: 10px;
@@ -104,6 +120,7 @@ header .buy-ticket {
   min-width: 130px;
   padding: 5px 0 5px 0;
   transition: all 0.2s ease-in-out;
+  text-align: center;
 }
 
 .buy-ticket:hover {
@@ -163,6 +180,12 @@ header .buy-ticket {
 }
 .buttons button {
   /* margin-left: 2rem; */
+  display: flex;
+  justify-content: center;
+  max-width: 45%;
+}
+
+.buttons a {
   display: flex;
   justify-content: center;
   max-width: 45%;
@@ -411,9 +434,9 @@ header .buy-ticket {
 }
 
 .form p {
-  width: 80%;
+  width: 90%;
   max-width: 650px;
-  text-align: center;
+  line-height: 20px;
 }
 
 .form form div {
@@ -516,4 +539,9 @@ footer ul li a {
 }
 .snowflake {
   height: 100%;
+}
+
+.navigate-to {
+  position: absolute;
+  top: -110px;
 }

@@ -186,14 +186,14 @@
         </svg>
       </div>
       <ul class="topbar">
-        <li class="top-links"><button id="home">Hem</button></li>
-        <li class="top-links"><button id="information">Information</button></li>
-        <li class="top-links"><button id="contest">Tävling</button></li>
+        <li class="top-links"><a href="#">Hem</a></li>
+        <li class="top-links"><a href="#information">Information</a></li>
+        <li class="top-links"><a href="#contest">Tävling</a></li>
         <li class="top-links">
-          <button id="price">Priser & Öppettider</button>
+          <a href="#links">Priser & Öppettider</a>
         </li>
-        <li class="top-links"><button id="find">Hitta hit</button></li>
-        <li class="top-links"><button id="contact">Kontakt</button></li>
+        <li class="top-links"><a href="#links">Kontakt</a></li>
+        <li class="top-links"><a href="#find">Hitta hit</a></li>
         <li class="top-links">
           <button id="search">
             <div class="search-box">
@@ -203,7 +203,7 @@
         </li>
       </ul>
 
-      <button class="buy-ticket karla">Köp biljett</button>
+      <a href="#tickets" class="buy-ticket karla">Köp biljett</a>
       <div class="hamburger">
         <svg viewBox="0 0 100 80" fill="white" width="40" height="40">
           <rect width="100" height="10"></rect>
@@ -324,7 +324,7 @@
         </div>
         <div class="buttons">
           <button class="primary-button karla">För fotografer</button
-          ><button class="buy-ticket karla">Köp biljett</button>
+          ><a href="#tickets" class="buy-ticket karla">Köp biljett</a>
         </div>
       </div>
       <button class="read-more karla-bold">
@@ -352,6 +352,7 @@
     </section>
 
     <section class="meet-future">
+      <div id="information" class="navigate-to"></div>
       <aside><p>Information</p></aside>
       <div class="container">
         <h1 class="heading">Möt framtidens fotografer</h1>
@@ -430,6 +431,7 @@
       </button>
     </section>
     <section class="contest">
+      <div id="contest" class="navigate-to"></div>
       <aside><p>Tävlingen</p></aside>
       <div class="container">
         <div class="contest-text">
@@ -533,6 +535,7 @@
       <h2 class="karla">Vinnarna presenteras 1 maj</h2>
     </section>
     <section class="links">
+      <div id="links" class="navigate-to"></div>
       <a href="https://www.fotografiska.com/sto/tillganglighet/oppettider/">
         <div class="open-img">
           <p class="minion">Öppettider<br />& priser</p>
@@ -633,6 +636,7 @@
       </div>
     </section>
     <section class="form">
+      <div id="tickets" class="navigate-to"></div>
       <aside><p>Biljetter</p></aside>
       <h1 class="heading">Biljetter</h1>
       <p class="karla">
@@ -663,6 +667,7 @@
       </form>
     </section>
     <section class="map-section">
+      <div id="find" class="navigate-to"></div>
       <img
         class="map"
         src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fodenochfreja.se%2Fimages%2Fallservicekarta.jpg&f=1&nofb=1"
