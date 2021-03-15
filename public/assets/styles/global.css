@@ -370,7 +370,7 @@ header .buy-ticket {
 
 .carousel-2 {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 110px);
 }
 
 .carousel-2 div img {
