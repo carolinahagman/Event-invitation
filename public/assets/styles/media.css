@@ -93,6 +93,10 @@
   div.mobile-only-image {
     display: block;
   }
+
+  div.static-buttons {
+    display: flex;
+  }
 }
 
 @media only screen and (max-width: 1500px) {
