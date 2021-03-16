@@ -550,3 +550,38 @@ footer ul li a {
 #open-hours-img {
   transition: all 0.1s ease-in-out;
 }
+
+.static-buttons {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: fixed;
+  bottom: 0px;
+  z-index: 3;
+  padding: 1rem;
+}
+
+.arrow-up,
+.my-ticket {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 50%;
+  width: 50px;
+  padding: 5px;
+  height: 50px;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+.arrow-up svg {
+  height: 30px;
+  width: 30px;
+}
+
+.my-ticket svg {
+  height: 30px;
+  width: 30px;
+}
