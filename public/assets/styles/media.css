@@ -95,13 +95,15 @@
   }
 }
 
-.hamburger {
-  display: none;
+@media only screen and (max-width: 1500px) {
 }
-
-@media only screen and (max-width: 1500) {
-}
-@media only screen and (max-width: 1000) {
+@media only screen and (max-width: 1000px) {
+  .topbar {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
 }
 @media only screen and (max-width: 750) {
 }

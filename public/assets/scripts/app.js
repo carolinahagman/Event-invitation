@@ -7,6 +7,12 @@ const emailField = document.querySelector("#email");
 const addressField = document.querySelector("#address");
 const openHoursImg = document.querySelector("#open-hours-img");
 const contactImg = document.querySelector("#contact-img");
+const submitBtn = document.querySelector("#submit-btn");
+const form = document.querySelector("#form");
+const hamburgerMenu = document.querySelector("#menu-icon");
+const hamCheckbox = document.querySelector("#ham-check");
+const hamburgerLinks = document.querySelectorAll(".ham-links");
+const sections = document.querySelectorAll("section");
 
 // Query param values
 const urlParams = new URLSearchParams(window.location.search);
@@ -32,6 +38,10 @@ if (urlParams.has("address")) {
   addressField.value = address;
 }
 
+submitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+});
+
 // Play video on click
 playBtn.addEventListener("click", (e) => {
   e.preventDefault();
@@ -52,4 +62,27 @@ openHoursImg.addEventListener("mouseover", (e) => {
 });
 openHoursImg.addEventListener("mouseout", (e) => {
   openHoursImg.classList.add("darkened");
+});
+
+hamburgerMenu.addEventListener("click", (e) => {
+  console.log("click");
+  hamburgerMenu.classList.toggle("ham-hidden");
+});
+
+hamCheckbox.addEventListener("click", (e) => {
+  if (hamCheckbox.checked == true) {
+    sections.forEach((el) => {
+      el.style.pointerEvents = "none";
+    });
+  } else {
+    sections.forEach((el) => {
+      el.style.pointerEvents = "auto";
+    });
+  }
+});
+
+hamburgerLinks.forEach((el) => {
+  el.addEventListener("click", (e) => {
+    hamCheckbox.click();
+  });
 });

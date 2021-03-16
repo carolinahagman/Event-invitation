@@ -171,25 +171,25 @@ header .buy-ticket {
 }
 .details-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+.details-container p {
+  margin: 10px 20px;
 }
 .buttons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
 }
-.buttons button {
+.buttons button,
+.buttons a {
   /* margin-left: 2rem; */
   display: flex;
   justify-content: center;
   max-width: 45%;
+  margin: 5px 20px;
 }
 
-.buttons a {
-  display: flex;
-  justify-content: center;
-  max-width: 45%;
-}
 .buttons .text-container div {
   display: flex;
   justify-content: center;

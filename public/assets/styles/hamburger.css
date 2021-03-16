@@ -1,0 +1,107 @@
+@media only screen and (orientation: portrait) {
+  .hamburger-menu .menu {
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    z-index: 100;
+    width: 200px;
+    height: 200px;
+    background: var(--bg-color-dark);
+    border-radius: 50% 50% 50% 50%;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 0 0 var(--bg-color-dark), 0 0 0 0 var(--bg-color-dark);
+    cursor: pointer;
+  }
+  .hamburger-menu .hamburger {
+    position: absolute;
+    top: 135px;
+    left: 50px;
+    width: 30px;
+    height: 2px;
+    background: white;
+    display: block;
+    transform-origin: center;
+    transition: 0.5s ease-in-out;
+  }
+  .hamburger-menu .hamburger:after,
+  .hamburger-menu .hamburger:before {
+    transition: 0.5s ease-in-out;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: white;
+  }
+  .hamburger-menu .hamburger:before {
+    top: -10px;
+  }
+  .hamburger-menu .hamburger:after {
+    bottom: -10px;
+  }
+  .hamburger-menu input {
+    display: none;
+  }
+  .hamburger-menu input:checked + .menu {
+    box-shadow: 0 0 0 100vw var(--bg-color-dark),
+      0 0 0 100vh var(--bg-color-dark);
+    border-radius: 0;
+  }
+  .hamburger-menu input:checked + .menu .hamburger {
+    transform: rotate(45deg);
+  }
+  .hamburger-menu input:checked + .menu .hamburger:after {
+    transform: rotate(90deg);
+    bottom: 0;
+  }
+  .hamburger-menu input:checked + .menu .hamburger:before {
+    transform: rotate(90deg);
+    top: 0;
+  }
+  .hamburger-menu input:checked + .menu + ul {
+    opacity: 1;
+  }
+
+  .hamburger-menu ul {
+    z-index: 200;
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    display: flex;
+    margin-top: 0px;
+    padding: 0px 0px 0px 0px;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 70vh;
+    width: 100vw;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.25s 0s ease-in-out;
+    pointer-events: none;
+  }
+
+  .hamburger-menu ul li {
+    height: 30px;
+    margin-top: 30px;
+  }
+
+  .ham-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    pointer-events: auto;
+  }
+
+  .ham-links:hover {
+    text-decoration: underline;
+  }
+  .ham-hidden a {
+    pointer-events: none;
+    cursor: none;
+  }
+}
+@media only screen and (orientation: landscape) {
+  .hamburger-menu {
+    display: none;
+  }
+}
