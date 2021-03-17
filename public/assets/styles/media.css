@@ -90,10 +90,6 @@
     width: 4rem;
   }
 
-  div.mobile-only-image {
-    display: block;
-  }
-
   div.static-buttons {
     display: flex;
   }
@@ -108,8 +104,15 @@
   .hamburger-menu {
     display: block;
   }
+
+  h1.heading {
+    font-size: 2.5rem;
+  }
 }
-@media only screen and (max-width: 750) {
+@media only screen and (max-width: 750px) {
 }
-@media only screen and (max-width: 350) {
+@media only screen and (max-width: 400px) {
+  div.instagram-image {
+    height: 500px;
+  }
 }

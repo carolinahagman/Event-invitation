@@ -13,6 +13,9 @@ const hamburgerMenu = document.querySelector("#menu-icon");
 const hamCheckbox = document.querySelector("#ham-check");
 const hamburgerLinks = document.querySelectorAll(".ham-links");
 const sections = document.querySelectorAll("section");
+const likeBtn = document.querySelector("#like-btn");
+const user = document.querySelector("#user");
+const instagramImg = document.querySelector("#instagram-img");
 
 // Query param values
 const urlParams = new URLSearchParams(window.location.search);
@@ -20,6 +23,7 @@ const firstName = urlParams.get("firstname");
 const lastName = urlParams.get("lastname");
 const email = urlParams.get("email");
 const address = urlParams.get("address");
+const username = urlParams.get("username");
 
 // Populate buy-ticket form
 if (urlParams.has("firstname")) {
@@ -36,6 +40,11 @@ if (urlParams.has("email")) {
 
 if (urlParams.has("address")) {
   addressField.value = address;
+}
+
+if (urlParams.has("username")) {
+  user.innerHTML = username;
+  instagramImg.src = "https://source.unsplash.com/collection/8678360/400x400";
 }
 
 submitBtn.addEventListener("click", (e) => {
@@ -85,4 +94,8 @@ hamburgerLinks.forEach((el) => {
   el.addEventListener("click", (e) => {
     hamCheckbox.click();
   });
+});
+
+likeBtn.addEventListener("click", () => {
+  likeBtn.classList.toggle("red-heart");
 });

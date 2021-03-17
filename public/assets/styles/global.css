@@ -7,8 +7,13 @@
   display: none;
 }
 
+.red-heart {
+  fill: red;
+}
+
 html {
   scroll-behavior: smooth;
+  color: var(--bg-color-dark);
 }
 
 body {
@@ -523,17 +528,38 @@ footer ul li a {
   overflow: hidden;
 }
 
-.mobile-only-image {
+.instagram-image {
   width: 90vw;
-  max-width: 650px;
-  display: none;
+  max-width: 400px;
+  height: 570px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: -1px 3px 6px #00000066;
 }
-
-.mobile-only-image img {
+.profile {
+  display: flex;
   width: 100%;
+  align-items: center;
+}
+.profile-picture {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin: 0 5px 0 10px;
+}
+.instagram-image img {
+  width: 100%;
+  max-width: 400px;
 }
 
-.mobile-only-image p {
+.like button {
+  margin-left: 5px;
+}
+
+.instagram-container p {
   text-align: center;
   margin: 10px 0px 2.5rem 0px;
 }
