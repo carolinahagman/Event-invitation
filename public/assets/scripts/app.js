@@ -12,6 +12,7 @@ const form = document.querySelector("#form");
 const hamburgerMenu = document.querySelector("#menu-icon");
 const hamCheckbox = document.querySelector("#ham-check");
 const hamburgerLinks = document.querySelectorAll(".ham-links");
+const hamburgerLinkButtons = document.querySelectorAll(".ham-links a");
 const sections = document.querySelectorAll("section");
 const likeBtn = document.querySelector("#like-btn");
 const user = document.querySelector("#user");
@@ -83,9 +84,16 @@ hamCheckbox.addEventListener("click", (e) => {
     sections.forEach((el) => {
       el.style.pointerEvents = "none";
     });
+    hamburgerLinkButtons.forEach((el) => {
+      el.style.pointerEvents = "auto";
+    });
   } else {
     sections.forEach((el) => {
       el.style.pointerEvents = "auto";
+    });
+
+    hamburgerLinkButtons.forEach((el) => {
+      el.style.pointerEvents = "none";
     });
   }
 });
