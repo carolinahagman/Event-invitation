@@ -20,6 +20,13 @@ const instagramImg = document.querySelector("#instagram-img");
 const openHourBtn = document.querySelector("#open-hours-button");
 const priceSection = document.querySelector("#prices");
 const openHourSection = document.querySelector("#open-hours");
+const preloader = document.querySelector(".preloader");
+const spinner = document.querySelector(".preloader div");
+
+setTimeout(() => {
+  preloader.classList.add("disappear");
+  spinner.classList.add("disappear-spinner");
+}, 1700);
 
 // Query param values
 const urlParams = new URLSearchParams(window.location.search);
@@ -77,6 +84,7 @@ openHoursImg.addEventListener("mouseout", (e) => {
   openHoursImg.classList.add("darkened");
 });
 
+//hamburgermenu
 hamburgerMenu.addEventListener("click", (e) => {
   console.log("click");
   hamburgerMenu.classList.toggle("ham-hidden");
@@ -106,11 +114,11 @@ hamburgerLinks.forEach((el) => {
     hamCheckbox.click();
   });
 });
-
+//'like' isntagram post
 likeBtn.addEventListener("click", () => {
   likeBtn.classList.toggle("red-heart");
 });
-
+//open sections
 openHourBtn.addEventListener("click", () => {
   priceSection.style.display = "flex";
   openHourSection.style.display = "flex";

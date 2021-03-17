@@ -31,6 +31,54 @@ button {
   padding: 3px 5px;
   cursor: pointer;
 }
+
+.preloader {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-color-dark);
+  color: white;
+  z-index: 101;
+  transition: all 700ms ease-in-out;
+}
+.preloader div {
+  transition: all 400ms ease-out;
+}
+.preloader div svg {
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  width: 100px;
+  height: 100px;
+}
+
+.disappear {
+  opacity: 0;
+  z-index: -1;
+}
+.disappear-spinner {
+  opacity: 0;
+  z-index: -1;
+
+  transform: translateY(-300px);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#open-hours-button {
+  padding: 0px;
+}
 aside {
   display: flex;
   align-items: center;
