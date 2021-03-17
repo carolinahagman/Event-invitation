@@ -10,7 +10,7 @@
     object-fit: cover;
     width: 100vw;
   }
-  button.read-more {
+  a.read-more {
     display: none;
   }
   section aside {
@@ -89,9 +89,6 @@
     display: flex;
   }
 }
-
-@media only screen and (max-width: 1500px) {
-}
 @media only screen and (max-width: 1000px) {
   .topbar {
     display: none;
@@ -99,12 +96,9 @@
   .hamburger-menu {
     display: block;
   }
-
   h1.heading {
     font-size: 2.5rem;
   }
-}
-@media only screen and (max-width: 750px) {
 }
 @media only screen and (max-width: 400px) {
   div.instagram-image {
