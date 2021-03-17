@@ -17,6 +17,9 @@ const sections = document.querySelectorAll("section");
 const likeBtn = document.querySelector("#like-btn");
 const user = document.querySelector("#user");
 const instagramImg = document.querySelector("#instagram-img");
+const openHourBtn = document.querySelector("#open-hours-button");
+const priceSection = document.querySelector("#prices");
+const openHourSection = document.querySelector("#open-hours");
 
 // Query param values
 const urlParams = new URLSearchParams(window.location.search);
@@ -106,4 +109,9 @@ hamburgerLinks.forEach((el) => {
 
 likeBtn.addEventListener("click", () => {
   likeBtn.classList.toggle("red-heart");
+});
+
+openHourBtn.addEventListener("click", () => {
+  priceSection.style.display = "flex";
+  openHourSection.style.display = "flex";
 });

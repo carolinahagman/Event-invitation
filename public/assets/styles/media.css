@@ -5,11 +5,6 @@
   header .buy-ticket {
     display: none;
   }
-  .hero h1.heading {
-  }
-  .carousel {
-    display: none;
-  }
   .portrait-hero-image {
     height: 130vw;
     object-fit: cover;

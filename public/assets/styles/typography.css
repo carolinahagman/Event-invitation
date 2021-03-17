@@ -129,3 +129,23 @@ aside p {
   font-size: 3rem;
   text-align: center;
 }
+
+.price-container .info {
+  text-align: center;
+}
+
+.open-text {
+  text-align: start;
+}
+
+.open-text span {
+  font-family: Karla-Bold;
+}
+
+.open-hours-text {
+  text-align: center;
+}
+
+.open-hours-text span {
+  font-family: Karla-Bold;
+}

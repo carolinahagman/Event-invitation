@@ -259,6 +259,12 @@ header .buy-ticket {
   width: 50%;
 }
 
+.price-container {
+  margin-bottom: 5rem;
+}
+.price-container .info-container {
+  margin: 1rem 0 1rem 0;
+}
 .film {
   width: 100vw;
   position: relative;
@@ -396,6 +402,13 @@ header .buy-ticket {
   text-align: center;
 }
 
+.open-hours-container {
+  display: flex;
+  width: 100%;
+  max-width: 650px;
+  justify-content: space-evenly;
+}
+
 .carousel-2 {
   width: 100vw;
   height: calc(100vh - 110px);
@@ -531,7 +544,7 @@ footer ul li a {
 .instagram-image {
   width: 90vw;
   max-width: 400px;
-  height: 570px;
+  height: 550px;
   background: white;
   display: flex;
   flex-direction: column;
@@ -610,4 +623,9 @@ footer ul li a {
 .my-ticket svg {
   height: 30px;
   width: 30px;
+}
+
+#prices,
+#open-hours {
+  display: none;
 }
