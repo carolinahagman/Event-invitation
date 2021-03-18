@@ -1,4 +1,3 @@
-
 // Queryselectors
 const playBtn = document.querySelector(".play");
 const video = document.querySelector("#video");
@@ -23,6 +22,7 @@ const priceSection = document.querySelector("#prices");
 const openHourSection = document.querySelector("#open-hours");
 const preloader = document.querySelector(".preloader");
 const spinner = document.querySelector(".preloader div");
+const navPriceSection = document.querySelector("#price-section");
 
 setTimeout(() => {
   preloader.classList.add("disappear");
@@ -123,4 +123,5 @@ likeBtn.addEventListener("click", () => {
 openHourBtn.addEventListener("click", () => {
   priceSection.style.display = "flex";
   openHourSection.style.display = "flex";
+  navPriceSection.scrollIntoView();
 });
