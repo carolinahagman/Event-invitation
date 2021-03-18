@@ -1,14 +1,17 @@
 @font-face {
   font-family: Karla-Bold;
   src: url(../fonts/Karla-Bold.woff2);
+  font-display: swap;
 }
 @font-face {
   font-family: Karla;
   src: url(../fonts/Karla-Regular.woff2);
+  font-display: swap;
 }
 @font-face {
   font-family: Karla-Light;
   src: url(../fonts/Karla-Light.woff2);
+  font-display: swap;
 }
 
 h6 {
