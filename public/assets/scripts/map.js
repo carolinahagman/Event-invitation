@@ -1,6 +1,6 @@
 let script = document.createElement("script");
 script.src = process.env.API_KEY;
-script.async = true;
+script.defer = true;
 
 window.initMap = () => {
   map = new google.maps.Map(document.getElementById("map"), {

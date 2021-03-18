@@ -566,6 +566,8 @@
           </div>
           <img
             loading="lazy"
+            width="50%"
+            height="100%"
             src="./assets/images/information.webp"
             alt="close up of lens"
           />
@@ -670,6 +672,8 @@
               </div>
               <img
                 id="instagram-img"
+                width="400px"
+                height="400px"
                 loading="lazy"
                 src="./assets/images/instagram.webp"
                 alt=""
@@ -857,28 +861,28 @@
           <img
             class="carousel-cell-image"
             id="carousel1"
-            data-flickity-lazyload="https://i.imgur.com/kPvcUnt.jpg"
+            data-flickity-lazyload="https://i.ibb.co/0GP345w/karusell2-1.webp"
             alt="borås resecentrum"
           />
         </div>
         <div class="carousel-cell">
           <img
             class="carousel-cell-image"
-            data-flickity-lazyload="https://i.imgur.com/ouZD5QU.jpg"
+            data-flickity-lazyload="https://i.ibb.co/W37HP3G/karusell2-2.webp"
             alt="gothia towers"
           />
         </div>
         <div class="carousel-cell">
           <img
             class="carousel-cell-image"
-            data-flickity-lazyload="https://i.imgur.com/nIQpmLm.jpg"
+            data-flickity-lazyload="https://i.ibb.co/SRzcsGd/karusell2-3.webp"
             alt="woman with baby in a crowd"
           />
         </div>
         <div class="carousel-cell">
           <img
             class="carousel-cell-image"
-            data-flickity-lazyload="https://i.imgur.com/wnQx5Pi.jpeg"
+            data-flickity-lazyload="https://i.ibb.co/CBNXP1T/karusell2-4.webp"
             alt="three people from behind with hands in the air"
           />
         </div>
@@ -913,38 +917,15 @@
         </div>
         <div class="submit-container">
           <button class="primary-button" id="submit-btn" type="submit">
-            Till kassan
+            Köp biljett
           </button>
         </div>
       </form>
       <p class="confirmation karla"></p>
     </section>
     <section class="map-section">
-      <!-- <div id="find" class="navigate-to"></div>
-      <div id="map"></div> -->
-      <div
-        style="
-          overflow: hidden;
-          resize: none;
-          max-width: 100%;
-          width: 100vw;
-          height: 500px;
-        "
-      >
-        <div id="gmapdisplay">
-          <iframe
-            frameborder="0"
-            src="https://www.google.com/maps/embed/v1/place?q=Stadsgårdshamnen+22,+116+45+Stockholm&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-          ></iframe>
-        </div>
-        <a
-          class="embeddedmap-code"
-          rel="nofollow"
-          href="https://www.embed-map.com"
-          id="enablemap-info"
-          >https://www.embed-map.com</a
-        >
-      </div>
+      <div id="find" class="navigate-to"></div>
+      <div id="map"></div>
     </section>
     <footer>
       <h6>Meny</h6>
@@ -1212,9 +1193,12 @@
       <p class="karla rights">© 2021 School Project. No Rights Reserved.</p>
     </footer>
     <script src="./assets/scripts/app.js"></script>
-    <!-- <script src="./assets/scripts/map.js"></script> -->
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/scripts/map.js"></script>
+    <script
+      src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"
+      async
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async></script>
     <script>
       AOS.init();
     </script>
