@@ -23,6 +23,7 @@ const openHourSection = document.querySelector("#open-hours");
 const preloader = document.querySelector(".preloader");
 const spinner = document.querySelector(".preloader div");
 const navPriceSection = document.querySelector("#price-section");
+const confirmation = document.querySelector(".confirmation");
 
 setTimeout(() => {
   preloader.classList.add("disappear");
@@ -61,6 +62,8 @@ if (urlParams.has("username")) {
 
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
+  confirmation.innerHTML =
+    "Kul att du vill komma! Du får en bekräftelse till din mail";
 });
 
 // Play video on click
