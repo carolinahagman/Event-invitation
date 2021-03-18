@@ -124,7 +124,15 @@ likeBtn.addEventListener("click", () => {
 });
 //open sections
 openHourBtn.addEventListener("click", () => {
-  priceSection.style.display = "flex";
-  openHourSection.style.display = "flex";
-  navPriceSection.scrollIntoView();
+  if (
+    priceSection.style.display == "none" &&
+    openHourSection.style.display == "none"
+  ) {
+    priceSection.style.display = "flex";
+    openHourSection.style.display = "flex";
+    navPriceSection.scrollIntoView();
+  } else {
+    priceSection.style.display = "none";
+    openHourSection.style.display = "none";
+  }
 });
