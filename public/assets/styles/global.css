@@ -248,7 +248,7 @@ header .buy-ticket {
   justify-content: center;
 }
 
-.read-more {
+. {
   position: absolute;
   display: flex;
   align-items: center;
@@ -530,9 +530,9 @@ header .buy-ticket {
   background: var(--bg-color);
 }
 
-.map {
+#map {
   width: 100vw;
-  object-fit: contain;
+  height: 33vw;
 }
 
 footer {
