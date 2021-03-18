@@ -904,8 +904,31 @@
       <p class="confirmation karla"></p>
     </section>
     <section class="map-section">
-      <div id="find" class="navigate-to"></div>
-      <div id="map"></div>
+      <!-- <div id="find" class="navigate-to"></div>
+      <div id="map"></div> -->
+      <div
+        style="
+          overflow: hidden;
+          resize: none;
+          max-width: 100%;
+          width: 100vw;
+          height: 500px;
+        "
+      >
+        <div id="gmapdisplay">
+          <iframe
+            frameborder="0"
+            src="https://www.google.com/maps/embed/v1/place?q=Stadsgårdshamnen+22,+116+45+Stockholm&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+          ></iframe>
+        </div>
+        <a
+          class="embeddedmap-code"
+          rel="nofollow"
+          href="https://www.embed-map.com"
+          id="enablemap-info"
+          >https://www.embed-map.com</a
+        >
+      </div>
     </section>
     <footer>
       <h6>Meny</h6>

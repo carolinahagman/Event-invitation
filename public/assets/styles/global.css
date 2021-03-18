@@ -676,3 +676,14 @@ footer ul li a {
 #open-hours {
   display: none;
 }
+
+#gmapdisplay {
+  height: 500px;
+  width: 100vw;
+}
+
+iframe {
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
