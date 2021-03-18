@@ -1,3 +1,4 @@
+
 // Queryselectors
 const playBtn = document.querySelector(".play");
 const video = document.querySelector("#video");
