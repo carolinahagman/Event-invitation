@@ -100,7 +100,7 @@
     font-size: 2.5rem;
   }
   div#map {
-    height: 50vh;
+    height: 70vh;
   }
 }
 @media only screen and (max-width: 400px) {
