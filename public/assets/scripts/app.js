@@ -62,8 +62,14 @@ if (urlParams.has("username")) {
 
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  confirmation.innerHTML =
-    "Kul att du vill komma! Du får en bekräftelse till din mail";
+  if (
+    nameField.value != "" &&
+    emailField.value != "" &&
+    addressField.value != ""
+  ) {
+    confirmation.innerHTML =
+      "Kul att du vill komma! Du får en bekräftelse till din mail";
+  }
 });
 
 // Play video on click
