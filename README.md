@@ -33,6 +33,15 @@
 
 ## Code Review
 
+1. `package.json`: It might be a good idea to install Prettier through npm for future project when you have collaborating developers.
+2. `app.js`: Even though it's not too big in this particular project, diving your javascript into multiple files according to their function might be a good practice.
+3. `app.js l:63: Even if the form is empty of input, the submit is still comfirming. Try switch your `click` eventListener to a `submit`and your required should work properly.
+4. Good project structure, it's really easy to navigate what is what in your code.
+5. Nice and clean design on your website, no animation feels overwhelming, they just add more life to the page. I like how you added the personified instagram post with the url parameter values.
+
+> Awesome work, it was really hard even finding something to remark on.
+> Keep up the good work! :raised_hands:
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details
